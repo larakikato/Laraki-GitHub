@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "To-Do's";
+}
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @Model.name
+            </div>
+            
+                <ul class="list-group"> @foreach(KeyValuePair<string, bool> objAlpha in Model.ToDoList)
+                {
+                    <li class="list-group-item">
+                        @if (objAlpha.Value == true) {<img src="~/images/greencheck.svg" alt="Visual Studio" class="media-left" width="25px" height="25px" align="left"/><span class="sr-only">completed</span> 
+                                    @objAlpha.Key }
+                        @if (objAlpha.Value == false) {<img src="~/images/redx.svg" alt="Visual Studio" class="media-left" width="25px" height="25px" align="left"/><span class="sr-only">incomplete</span>
+                                @objAlpha.Key }
+                    </li>
+                }
+    
+        </div>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\contact\bin\Debug\netcoreapp1.1\contact.deps.json
+D:\CS50 Track Projects\contact\bin\Debug\netcoreapp1.1\contact.runtimeconfig.json
+D:\CS50 Track Projects\contact\bin\Debug\netcoreapp1.1\contact.runtimeconfig.dev.json
+D:\CS50 Track Projects\contact\bin\Debug\netcoreapp1.1\contact.dll
+D:\CS50 Track Projects\contact\bin\Debug\netcoreapp1.1\contact.pdb
+D:\CS50 Track Projects\contact\obj\Debug\netcoreapp1.1\contact.AssemblyInfo.cs
+D:\CS50 Track Projects\contact\obj\Debug\netcoreapp1.1\contact.dll
+D:\CS50 Track Projects\contact\obj\Debug\netcoreapp1.1\contact.pdb

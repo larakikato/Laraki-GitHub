@@ -1,0 +1,95 @@
+@{
+    ViewData["Title"] = "Event Requests";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="panel panel-default">
+                <div class="panel-heading panel-info">
+                    <h3 class="panel-title">Event Requests Awaiting Approval:</h3>
+                </div>
+                <div class=panel-body>
+                     @{
+                         foreach (Event alpha in (dynamic)ViewData["EventTable"])
+                         {
+                             if( alpha.AcceptedQ == "Awaiting Approval" )
+                             {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-info">
+                                        <h4>@alpha.Name</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h5>Date: @alpha.date</h5>
+                                        <br>
+                                        <h5>Event Description: @alpha.Description</h5>
+                                        <br>
+                                        <h5>Additional Comments: @alpha.Comments</h5>
+                                        <br>
+                                        <h5>Guests Expected: @alpha.numOfGuest</h5>
+                                        <br>
+                                        <h5>Stage Required: @alpha.eventStage</h5>
+                                        <br>
+                                        <h5>Audio Required: @alpha.eventAudio</h5>
+                                        <br>
+                                        <h5>Video Required: @alpha.eventVideo</h5>
+                                    </div>
+                                    <div class="form-group panel-footer" asp-action="EventRequestsPost" asp-controller="Home" method="post">
+                                        <form method="post" asp-area="" asp-controller="Home" asp-action="EventRequestsPost">
+                                        <input class="sr-only" type="text" value="@(alpha.Name)" name="EventName">
+                                        <button class="btn btn-primary btn-primary.gradient" method="post" type="submit" name="Accepted" value="Accepted">Approve!</button>
+                                        <button class="btn btn-primary btn-primary.red" method="post" type="submit" name="Denied" value="Denied">Deny!</button>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                             }
+                         }
+                     }
+                </div>
+        </div>
+        <!-- Below is the Panel for Denied Events -->
+        <div class="panel panel-default">
+                <div class="panel-heading panel-info">
+                    <h3 class="panel-title">Denied Events:</h3>
+                </div>
+                <div class=panel-body>
+                     @{
+                         foreach (Event alpha in (dynamic)ViewData["EventTable"])
+                         {
+                             if( alpha.AcceptedQ == "Denied" )
+                             {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-info">
+                                        <h4>@alpha.Name</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h5>Date: @alpha.date</h5>
+                                        <br>
+                                        <h5>Event Description: @alpha.Description</h5>
+                                        <br>
+                                        <h5>Additional Comments: @alpha.Comments</h5>
+                                        <br>
+                                        <h5>Guests Expected: @alpha.numOfGuest</h5>
+                                        <br>
+                                        <h5>Stage Required: @alpha.eventStage</h5>
+                                        <br>
+                                        <h5>Audio Required: @alpha.eventAudio</h5>
+                                        <br>
+                                        <h5>Video Required: @alpha.eventVideo</h5>
+                                    </div>
+                                    <div class="form-group panel-footer" asp-action="EventRequestsPost" asp-controller="Home" method="post">
+                                        <form method="post" asp-area="" asp-controller="Home" asp-action="EventRequestsPost">
+                                        <input class="sr-only" type="text" value="@(alpha.Name)" name="EventName">
+                                        <button class="btn btn-primary btn-primary.gradient" method="post" type="submit" name="Delete" value="Delete">Delete!</button>
+                                        <button class="btn btn-primary btn-primary.red" method="post" type="submit" name="Awaiting Approval" value="Awaiting Approval">Back To Waiting List!</button>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                             }
+                         }
+                     }
+                </div>
+        </div>
+    </div>
+</div>

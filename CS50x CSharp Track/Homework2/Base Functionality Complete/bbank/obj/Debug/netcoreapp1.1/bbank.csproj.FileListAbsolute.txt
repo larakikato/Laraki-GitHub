@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\bbank\bin\Debug\netcoreapp1.1\bbank.deps.json
+D:\CS50 Track Projects\bbank\bin\Debug\netcoreapp1.1\bbank.runtimeconfig.json
+D:\CS50 Track Projects\bbank\bin\Debug\netcoreapp1.1\bbank.runtimeconfig.dev.json
+D:\CS50 Track Projects\bbank\bin\Debug\netcoreapp1.1\bbank.dll
+D:\CS50 Track Projects\bbank\bin\Debug\netcoreapp1.1\bbank.pdb
+D:\CS50 Track Projects\bbank\obj\Debug\netcoreapp1.1\bbank.AssemblyInfo.cs
+D:\CS50 Track Projects\bbank\obj\Debug\netcoreapp1.1\bbank.dll
+D:\CS50 Track Projects\bbank\obj\Debug\netcoreapp1.1\bbank.pdb

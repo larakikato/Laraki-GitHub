@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Current";
+}
+<div class="row">
+    <div>
+        <h1>@Model.name</h1>
+        <br>
+        <h3>@Model.date</h3>
+        <h3>@Model.place.name</h3>
+        <h3>@Model.place.address</h3>
+        <h3>Admission: @Model.eventFees</h3>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <h4>Guest List:</h4>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var objAlpha in Model.attendees)
+                {
+                <tr><td>@objAlpha.name</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <h4>Staff:</h4>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone #</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var objAlpha in Model.staff)
+                {
+                <tr><td>@objAlpha.name</td><td>@objAlpha.phoneNumber</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

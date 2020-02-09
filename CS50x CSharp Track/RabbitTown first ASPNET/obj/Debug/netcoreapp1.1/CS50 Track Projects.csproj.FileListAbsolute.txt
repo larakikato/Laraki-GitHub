@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\bin\Debug\netcoreapp1.1\CS50 Track Projects.deps.json
+D:\CS50 Track Projects\bin\Debug\netcoreapp1.1\CS50 Track Projects.runtimeconfig.json
+D:\CS50 Track Projects\bin\Debug\netcoreapp1.1\CS50 Track Projects.runtimeconfig.dev.json
+D:\CS50 Track Projects\bin\Debug\netcoreapp1.1\CS50 Track Projects.dll
+D:\CS50 Track Projects\bin\Debug\netcoreapp1.1\CS50 Track Projects.pdb
+D:\CS50 Track Projects\obj\Debug\netcoreapp1.1\CS50 Track Projects.AssemblyInfo.cs
+D:\CS50 Track Projects\obj\Debug\netcoreapp1.1\CS50 Track Projects.dll
+D:\CS50 Track Projects\obj\Debug\netcoreapp1.1\CS50 Track Projects.pdb

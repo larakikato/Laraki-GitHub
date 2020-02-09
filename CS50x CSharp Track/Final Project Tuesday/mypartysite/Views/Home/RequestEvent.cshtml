@@ -1,0 +1,121 @@
+@model mypartysite.Model.Event
+@{
+    ViewData["Title"] = "Request Event";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="form-group panel panel-default">
+            <form asp-area="" asp-controller="Home" asp-action="RequestEventPost" asp-for="Event" >
+                <div class="panel-heading panel-info">
+                    <h3 class="panel-title">Event Request Submission Form:</h3>
+                </div>
+                <div class=panel-body>
+                    <label>Event Information:</label>
+                    <input name="EventName" type="text" class="form-control" placeholder="Event Name" required>
+                    <input name="EventDate" type="datetime-local" class="form-control" placeholder="Event Date" required>
+                    <br>
+                    <label>Have MyPartySite find you a venue?</label>
+                    <input id='watch-me1' name="VenueUnspecified" type="radio" class="form-check-input" placeholder="Yes, Find a Venue for Me." value="True">Yes, Find a Venue for Me.
+                    <input id='watch-me2' name="VenueUnspecified" type="radio" class="form-check-input" placeholder="No, I will find my own Venue." value="Customer Selected Venue">No, I will find my own Venue.
+                    <label id='show-me1'>Venue Information:</label>
+                    <input id='show-me2' name="VenueName" type="text" class="form-control" placeholder="Name of Venue">
+                    <input id='show-me3' name="VenueAddress" type="text" class="form-control" placeholder="Address of Venue">
+                    <br>
+                    <br>
+                    <label>Event Description:</label>
+                    <textarea name="EventDescription" type="text" class="form-control" placeholder="Describe your Event in detail." rows="3" required></textarea>
+                    <br>
+                    <label>Estimated Number of Guests:</label>
+                    <input name="EventNumOfGuest" type="text" class="form-check-input" placeholder="# of Guests Expected?">
+                    <br>
+                    <label>Live Entertainment:</label>
+                    <input name="LiveEntertainment" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.
+                    <input name="LiveEntertainment" type="radio" class="form-check-input" placeholder="No." value="False">No.
+                    <br>
+                    <label>Stage Required:</label>
+                    <input name="EventStage" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.
+                    <input name="EventStage" type="radio" class="form-check-input" placeholder="No." value="False">No.
+                    <br>
+                    <label>Audio Equipment Required:</label>
+                    <input name="EventAudio" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.
+                    <input name="EventAudio" type="radio" class="form-check-input" placeholder="No." value="False">No.
+                    <br>
+                    <label>Video Equipment Required:</label>
+                    <input name="EventVideo" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.
+                    <input name="EventVideo" type="radio" class="form-check-input" placeholder="No." value="False">No.
+                    <br>
+                    <label>Comments:</label>
+                    <textarea name="EventComments" type="text" class="form-control" placeholder="Additional Comments." rows="3"></textarea>
+                    <br>
+                    <br>
+                    <label>Draw Floorplan?</label>
+                    <input id='watch-me3' name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.
+                    <input id='watch-me4' name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="No." value="False">No.
+                    <input id='watch-me5' name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="Upload." value="Uploaded">Upload.
+
+                    <div id='show-me4'>
+                            <span id='show-me5'>Draw your Floorplan!</span>
+                    </div>
+                    
+                    <div id='show-me6'>
+                            <span id='show-me7'>Upload!</span>
+                    </div>
+
+                    <br>
+                    <button type="submit" method="post" class="btn btn-primary btn-primary.gradient">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- implementation source: https://stackoverflow.com/questions/21173209/show-div-when-radio-button-selected -->
+<script> 
+
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'watch-me1') {
+             
+            $('#show-me1').hide();
+            $('#show-me2').hide(); 
+            $('#show-me3').hide();          
+       }
+
+       else if ($(this).attr('id') == 'watch-me2') {
+
+            $('#show-me1').show();
+            $('#show-me2').show();
+            $('#show-me3').show();   
+       }
+
+       if($(this).attr('id') == 'watch-me3') {
+             
+            $('#show-me4').show();
+            $('#show-me5').show();
+            $('#show-me6').hide();
+            $('#show-me7').hide();          
+       }
+
+       else if ($(this).attr('id') == 'watch-me4')
+       {
+           $('#show-me4').hide();
+           $('#show-me5').hide();
+           $('#show-me6').hide();
+           $('#show-me7').hide();
+       }
+
+       else if ($(this).attr('id') == 'watch-me5')
+       {
+           $('#show-me4').hide();
+           $('#show-me5').hide();
+           $('#show-me6').show();
+           $('#show-me7').show();
+       }
+
+   });
+});
+
+</script>
+
+<!-- jQuery.UI.Combined -Version 1.12.1 -->

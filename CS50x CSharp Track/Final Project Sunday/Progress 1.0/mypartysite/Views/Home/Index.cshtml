@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/MyPartySitehome.svg" alt="ASP.NET" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/images/2017CS50CTrackHWBASH.svg" alt="Visual Studio" class="img-responsive" />
+        </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>About:</h2>
+        <ul>
+            <li>@Model.about</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2>Currently Planning:</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Home" asp-action="Current">@Model.name</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2>Past Events:</h2>
+        <ul>@foreach(string alpha in Model.pastEvents)
+            {
+            <li>
+                <span>@alpha</span>
+            </li>
+            }
+        </ul>
+    </div>
+</div>

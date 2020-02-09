@@ -1,0 +1,44 @@
+@model mypartysite.Model.Event
+@{
+    ViewData["Title"] = "Request Event";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="form-group panel panel-default">
+            <form asp-area="" asp-controller="Home" asp-action="RequestEventPost" asp-for="Event" >
+                <div class="panel-heading panel-info">
+                    <h3 class="panel-title">Event Request Submission Form:</h3>
+                </div>
+                <div class=panel-body>
+                    <label>Event Information:</label>
+                    <input name="EventName" type="text" class="form-control" placeholder="Event Name"></input>
+                    <input name="EventDate" type="datetime-local" class="form-control" placeholder="Event Date"></input>
+                    <br>
+                    <label>Venue Information:</label>
+                    <input name="VenueName" type="text" class="form-control" placeholder="Name of Venue"></input>
+                    <input name="VenueAddress" type="text" class="form-control" placeholder="Address of Venue"></input>
+                    <label>Or have us find the Venue?</label>
+                    <input name="VenueUnspecified" type="radio" class="form-check-input" placeholder="Yes, Find a Venue for Me." value="True">Yes, Find a Venue for Me.</input>
+                    <input name="VenueUnspecified" type="radio" class="form-check-input" placeholder="No, I will find my own Venue." value="Customer Selected Venue">No, I will find my own Venue.</input>
+                    <br>
+                    <br>
+                    <label>Event Description:</label>
+                    <textarea name="EventDescription" type="text" class="form-control" placeholder="Describe your Event in detail." rows="3"></textarea>
+                    <br>
+                    <label>Comments:</label>
+                    <textarea name="EventComments" type="text" class="form-control" placeholder="Additional Comments." rows="3"></textarea>
+                    <br>
+                    <br>
+                    <label>Draw Floorplan?</label>
+                    <input name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="Yes." value="True">Yes.</input>
+                    <input name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="No." value="False">No.</input>
+                    <input name="FloorplanSpecified" type="radio" class="form-check-input" placeholder="Upload." value="Uploaded">Upload.</input>
+
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-primary.gradient">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

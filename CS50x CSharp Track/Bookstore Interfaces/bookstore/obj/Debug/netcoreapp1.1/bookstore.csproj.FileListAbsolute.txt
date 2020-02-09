@@ -1,0 +1,4 @@
+D:\CS50 Track Projects\bookstore\bin\Debug\netcoreapp1.1\bookstore.deps.json
+D:\CS50 Track Projects\bookstore\bin\Debug\netcoreapp1.1\bookstore.runtimeconfig.json
+D:\CS50 Track Projects\bookstore\bin\Debug\netcoreapp1.1\bookstore.runtimeconfig.dev.json
+D:\CS50 Track Projects\bookstore\obj\Debug\netcoreapp1.1\bookstore.AssemblyInfo.cs

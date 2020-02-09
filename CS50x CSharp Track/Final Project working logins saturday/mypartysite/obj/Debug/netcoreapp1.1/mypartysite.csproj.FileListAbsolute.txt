@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\mypartysite\bin\Debug\netcoreapp1.1\mypartysite.deps.json
+D:\CS50 Track Projects\mypartysite\bin\Debug\netcoreapp1.1\mypartysite.runtimeconfig.json
+D:\CS50 Track Projects\mypartysite\bin\Debug\netcoreapp1.1\mypartysite.runtimeconfig.dev.json
+D:\CS50 Track Projects\mypartysite\bin\Debug\netcoreapp1.1\mypartysite.dll
+D:\CS50 Track Projects\mypartysite\bin\Debug\netcoreapp1.1\mypartysite.pdb
+D:\CS50 Track Projects\mypartysite\obj\Debug\netcoreapp1.1\mypartysite.AssemblyInfo.cs
+D:\CS50 Track Projects\mypartysite\obj\Debug\netcoreapp1.1\mypartysite.dll
+D:\CS50 Track Projects\mypartysite\obj\Debug\netcoreapp1.1\mypartysite.pdb

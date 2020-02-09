@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\MovieApp\bin\Debug\netcoreapp1.1\MovieApp.deps.json
+D:\CS50 Track Projects\MovieApp\bin\Debug\netcoreapp1.1\MovieApp.runtimeconfig.json
+D:\CS50 Track Projects\MovieApp\bin\Debug\netcoreapp1.1\MovieApp.runtimeconfig.dev.json
+D:\CS50 Track Projects\MovieApp\bin\Debug\netcoreapp1.1\MovieApp.dll
+D:\CS50 Track Projects\MovieApp\bin\Debug\netcoreapp1.1\MovieApp.pdb
+D:\CS50 Track Projects\MovieApp\obj\Debug\netcoreapp1.1\MovieApp.AssemblyInfo.cs
+D:\CS50 Track Projects\MovieApp\obj\Debug\netcoreapp1.1\MovieApp.dll
+D:\CS50 Track Projects\MovieApp\obj\Debug\netcoreapp1.1\MovieApp.pdb

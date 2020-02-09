@@ -1,0 +1,8 @@
+D:\CS50 Track Projects\inheritance\bin\Debug\netcoreapp1.1\inheritance.deps.json
+D:\CS50 Track Projects\inheritance\bin\Debug\netcoreapp1.1\inheritance.runtimeconfig.json
+D:\CS50 Track Projects\inheritance\bin\Debug\netcoreapp1.1\inheritance.runtimeconfig.dev.json
+D:\CS50 Track Projects\inheritance\bin\Debug\netcoreapp1.1\inheritance.dll
+D:\CS50 Track Projects\inheritance\bin\Debug\netcoreapp1.1\inheritance.pdb
+D:\CS50 Track Projects\inheritance\obj\Debug\netcoreapp1.1\inheritance.AssemblyInfo.cs
+D:\CS50 Track Projects\inheritance\obj\Debug\netcoreapp1.1\inheritance.dll
+D:\CS50 Track Projects\inheritance\obj\Debug\netcoreapp1.1\inheritance.pdb
