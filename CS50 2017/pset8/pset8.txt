@@ -1,0 +1,19 @@
+-So first we're going to write a script to put all the lines from US.zip into the database, needs to require config.js
+
+
+
+-search.php //eventually need to add an additional index to places for expidited searches
+	-Output: JSON array of Objects, each represent 1 row from places matching value of geo (from GET)
+	-utilize SQL LIKE / MATCH
+	-
+	-
+	-
+	-
+
+-need to implement typahead into the search functionality
+
+-says index.html is the entry point
+
+-scripts.js
+
+-a personal touch

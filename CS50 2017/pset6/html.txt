@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>This is the title.</title>
+	</head>
+	<body>
+		<h1>What is this?</h1>
+		<form action="https://www.google.com/search" method="get">
+			<input name="q" type="text"/>
+			<br/>
+			<input type="submit" value="What the fuck?"/>
+		</form>
+	</body>
+</html>

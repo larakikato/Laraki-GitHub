@@ -1,0 +1,26 @@
+look over line:
+
+method SP request-target SP HTTP-version CRLF
+
+when you find the first space you've passed the method, so then look for a /
+
+when you find the / you're at the start of absolute-path which is one of the things you need to store, 
+
+so begin saving with that character, into abs_path, until you hit either a ?, in which case you've found a query (make sure the query does not contain "), and should start storing into the query
+
+if you don't find a questionmark but instead find another space first, you know you're onto the HTTP version and you're done.
+
+if you find any errors in the request line you have to respond with err code 400
+
+before any of that happens you have to check method to see if it's GET, any other method is err code 405
+
+if you don't find / at the start of request target -> err 501
+
+err code 400 if request-target has a "
+
+and if HTTP-version is not HTTP/1.1 -> err code 505
+
+
+
+ 
+
